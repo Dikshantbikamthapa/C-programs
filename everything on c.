@@ -1,0 +1,457 @@
+// // // // // // // // #include<stdio.h>
+// // // // // // // // #include<time.h>
+// // // // // // // // #include<string.h>
+// // // // // // // // #include<stdlib.h>
+// // // // // // // // #include<math.h>
+// // // // // // // // #include<conio.h>
+// // // // // // // // #include<windows.h>
+
+// // // // // // // //     #define n 5
+// // // // // // // // int findMax_min(int a[n]);
+// // // // // // // // int del(int del,int a[],int p);
+// // // // // // // // int search(int a[],int x,int y);
+
+// // // // // // // // int main(){
+
+// // // // // // // //     int arr[n];
+// // // // // // // //     int i,j;
+// // // // // // // //     int find;
+
+
+// // // // // // // //     for ( i = 0; i < 5; i++)
+// // // // // // // //     {
+// // // // // // // //         printf("Enter the value of arr[%d]:",i+1);
+// // // // // // // //         scanf("%d",&arr[i]);
+// // // // // // // //     }
+
+// // // // // // // //     for ( i = 0; i < 5; i++)
+// // // // // // // //     {
+// // // // // // // //         for ( j = 0; j < 5; j++)
+// // // // // // // //         {
+// // // // // // // //             if (arr[i]<arr[j])
+// // // // // // // //             {
+// // // // // // // //                 int temp=arr[i];
+// // // // // // // //                 arr[i]=arr[j];
+// // // // // // // //                 arr[j]=temp;
+// // // // // // // //             }
+            
+// // // // // // // //         }
+        
+// // // // // // // //     }
+// // // // // // // //     printf("\nSORTED \n");
+// // // // // // // //     for ( i = 0; i < 5; i++)
+// // // // // // // //     {
+// // // // // // // //         printf("%d \n",arr[i]);
+// // // // // // // //     }
+// // // // // // // //     printf("\nMINIMUM MAXIMUM \n");
+// // // // // // // //     findMax_min(arr);
+
+// // // // // // // //     printf("Enter the number you want to find:");
+// // // // // // // //     scanf("%d",&find);
+    
+// // // // // // // //     search(arr,find,n);
+
+// // // // // // // //     int delee;
+
+// // // // // // // //     printf("Enter the number you want to delete:");
+// // // // // // // //     scanf("%d",&delee);
+
+// // // // // // // //     del(delee,arr,n);
+// // // // // // // //     getch();
+
+// // // // // // // //     return 0;
+// // // // // // // // }
+// // // // // // // // int findMax_min(int a[n]){
+// // // // // // // //         int j,k;
+
+// // // // // // // //         printf("The minimum number is %d \n",a[0]);
+// // // // // // // //         printf("The largest number is %d \n",a[n-1]);
+
+// // // // // // // // }
+
+// // // // // // // // int search(int a[n],int x,int y){
+// // // // // // // //     int i;
+
+// // // // // // // //     for ( i = 0; i < y; i++)
+// // // // // // // //     {
+// // // // // // // //         if (a[i]==x)
+// // // // // // // //         {
+// // // // // // // //             printf("found at %d index\n",i);
+// // // // // // // //             break;
+// // // // // // // //         }
+        
+        
+// // // // // // // //     }
+// // // // // // // //     if (a[i]!=x)
+// // // // // // // //     {
+// // // // // // // //         printf("\nNOT AVAILABE\n");
+// // // // // // // //     }
+// // // // // // // // }
+
+// // // // // // // // int del(int del,int a[n],int p){
+// // // // // // // //     int i,j;
+
+// // // // // // // //     for ( i = del; i < p; i++)
+// // // // // // // //     {
+// // // // // // // //         a[i]=a[i+1];
+// // // // // // // //     }
+// // // // // // // //     --p;
+// // // // // // // //     printf("\nAFTER DELETING \n");
+// // // // // // // //     for ( i = 0; i < p; i++)
+// // // // // // // //     {
+// // // // // // // //         printf("%d\n",a[i]);
+// // // // // // // //     }
+    
+// // // // // // // // }
+
+
+// // // // // // // #include<stdio.h>
+// // // // // // // #include<time.h>
+// // // // // // // #include<string.h>
+// // // // // // // #include<stdlib.h>
+// // // // // // // #include<math.h>
+// // // // // // // #include<conio.h>
+// // // // // // // #include<windows.h>
+
+// // // // // // // #define P 3
+
+// // // // // // // int main(){
+
+// // // // // // //     int n=3;
+// // // // // // //     int mat1[n][n],mat2[n][n];
+// // // // // // //     int i,j;
+
+// // // // // // //     for ( i = 0; i < n; i++)
+// // // // // // //     {
+// // // // // // //         for ( j = 0; j < n; j++)
+// // // // // // //         {
+// // // // // // //             printf("a[%d][%d]:",i,j);
+// // // // // // //             scanf("%d",&mat1[i][j]);
+// // // // // // //         }
+        
+// // // // // // //     }
+
+// // // // // // //     for ( i = 0; i < n; i++)
+// // // // // // //     {
+// // // // // // //         for ( j = 0; j < n; j++)
+// // // // // // //         {
+// // // // // // //             printf("b[%d][%d]:",i,j);
+// // // // // // //             scanf("%d",&mat2[i][j]);
+// // // // // // //         }
+        
+// // // // // // //     }
+
+// // // // // // //         matr_mult(mat1,mat2);
+
+// // // // // // //     getch();
+
+// // // // // // //     return 0;
+// // // // // // // }
+// // // // // // // int matr_mult(int a[3][3],int b[3][3]){
+    
+// // // // // // //     int j,i;
+// // // // // // //     int x=3;
+// // // // // // //     int result[3][3];
+
+// // // // // // //     for ( i = 0; i < x; i++)
+// // // // // // //     {
+// // // // // // //         for ( j = 0; j < x; j++)
+// // // // // // //         {
+// // // // // // //             result[i][j]=0;
+// // // // // // //             for (int k = 0; k < x; k++)
+// // // // // // //             {
+// // // // // // //                 result[i][j]+=a[i][k]*b[k][j];
+// // // // // // //             }
+            
+// // // // // // //         }
+        
+// // // // // // //     }
+
+// // // // // // //     for ( i = 0; i < x; i++)
+// // // // // // //     {
+// // // // // // //         for ( j = 0; j < x; j++)
+// // // // // // //         {
+// // // // // // //             printf("%d\t",result[i][j]);
+// // // // // // //         }
+// // // // // // //         printf("\n");
+// // // // // // //     }
+    
+    
+// // // // // // // }
+
+// // // // // // #include<stdio.h>
+// // // // // // #include<time.h>
+// // // // // // #include<string.h>
+// // // // // // #include<stdlib.h>
+// // // // // // #include<math.h>
+// // // // // // #include<conio.h>
+// // // // // // #include<windows.h>
+
+
+// // // // // // int main(){
+
+// // // // // //     int number,original_number;
+
+// // // // // //     printf("Enter the number :");
+// // // // // //     scanf("%d",&number);
+// // // // // //     int sum=0;
+
+// // // // // //     original_number=number;
+
+// // // // // //     while (number!=0)
+// // // // // //     {
+// // // // // //         int remainder=number%10;
+// // // // // //         sum=(sum*10)+remainder;
+// // // // // //         number=number/10;
+// // // // // //     }
+
+// // // // // //         if (sum==original_number)
+// // // // // //         {
+// // // // // //             printf("palindrome\n");
+// // // // // //         }else
+// // // // // //         {
+// // // // // //             printf("non palindrome\n");
+// // // // // //         }
+        
+// // // // // //         printf("The reverse o the number is %d\n",sum);
+        
+
+
+// // // // // //     getch();
+
+// // // // // //     return 0;
+// // // // // // }
+
+
+
+// // // // // #include<stdio.h>
+// // // // // #include<time.h>
+// // // // // #include<string.h>
+// // // // // #include<stdlib.h>
+// // // // // #include<math.h>
+// // // // // #include<conio.h>
+// // // // // #include<windows.h>
+
+
+// // // // // int main(){
+
+// // // // //     int n;
+// // // // //    int sum=0;
+
+
+// // // // //     printf("Enter the value of n:");
+// // // // //     scanf("%d",&n);
+
+// // // // //     for ( int i = 0; i <=n; i++)
+// // // // //     {
+// // // // //         sum+=i;
+// // // // //     }
+// // // // //         printf("The sum of the number is %d\n",sum);
+
+// // // // //     getch();
+
+// // // // //     return 0;
+// // // // // }
+
+
+// // // // #include<stdio.h>
+// // // // #include<time.h>
+// // // // #include<string.h>
+// // // // #include<stdlib.h>
+// // // // #include<math.h>
+// // // // #include<conio.h>
+// // // // #include<windows.h>
+
+// // // // int factorial(int n){
+// // // //     if (n==0 || n==1)
+// // // //     {
+// // // //         return 1;
+// // // //     }else
+// // // //     {
+// // // //         return (n*factorial(n-1));
+// // // //     }
+    
+    
+// // // // }
+// // // // int main(){
+
+// // // //     int number,originalnumber,i,j;
+// // // //     int sum=0;
+
+// // // //     printf("Enter a number:");
+// // // //     scanf("%d",&number);
+
+// // // //     originalnumber=number;
+
+// // // //     while (number>0)
+// // // //     {
+// // // //         int remainder=number%10;
+// // // //         sum+=factorial(remainder);
+// // // //         number=number/10;
+// // // //     }
+    
+// // // //     if (originalnumber==sum)
+// // // //     {
+// // // //         printf("\nstrong\n");
+// // // //     }else
+// // // //     {
+// // // //         printf("\nNon strong%%\n");
+// // // //     }
+    
+    
+
+// // // //     getch();
+
+// // // //     return 0;
+// // // // }
+
+// // // #include<stdio.h>
+// // // #include<time.h>
+// // // #include<string.h>
+// // // #include<stdlib.h>
+// // // #include<math.h>
+// // // #include<conio.h>
+// // // #include<windows.h>
+
+
+// // // int main(){
+
+// // //     int start=1,end=10000,i,j;
+// // //     int counter=0;
+// // //     for ( i = start; i <=end; i++)
+// // //     {
+// // //         for ( j = 2; j < end; j++)
+// // //         {
+// // //             if (i%j==0)
+// // //             {
+// // //                 break;
+// // //             }
+            
+// // //         }
+// // //         if (i==j&& counter<=10)
+// // //         {
+// // //             printf("%d\n",i);
+// // //             counter++;
+// // //         }
+        
+// // //     }
+    
+
+
+// // //     getch();
+
+// // //     return 0;
+// // // }
+
+
+// // #include<stdio.h>
+// // #include<time.h>
+// // #include<string.h>
+// // #include<stdlib.h>
+// // #include<math.h>
+// // #include<conio.h>
+// // #include<windows.h>
+
+
+// // int main(){
+
+// //     int dec;
+// //     long long int bin;
+// //     int i=0,j;
+// //     int bina[10];
+
+// //     printf("Enter a decimal Number:");
+// //     scanf("%d",&dec);
+
+// //     while (dec!=0)
+// //     {
+// //         int remainder=dec%2;
+// //         bina[i]=remainder;
+// //         dec=dec/2;
+// //         i--;
+// //     }
+    
+// //     for ( j = 0; j <i; j++)
+// //     {
+// //         printf("%d",bina[i]);
+// //     }
+    
+
+// //     getch();
+
+// //     return 0;
+// // }
+
+
+
+// #include<stdio.h>
+// #include<time.h>
+// #include<string.h>
+// #include<stdlib.h>
+// #include<math.h>
+// #include<conio.h>
+// #include<windows.h>
+
+
+// int main(){
+
+   
+//     int i=0,j;
+//     int count=0;
+//      int dec,bin[j];
+
+//    printf("Enter the decimal Number :");
+//    scanf("%d",&dec);
+
+//   while (dec>0)
+//   {
+//     i++;
+//     bin[i]=dec%16;
+//     dec=dec/16;
+//     count++;
+
+//   }
+  
+    
+//     for ( int j =count; j>0; j--)
+//     {
+//         printf("%d",bin[j]);
+//     }
+    
+
+//     getch();
+
+//     return 0;
+// }
+
+#include<stdio.h>
+#include<time.h>
+#include<string.h>
+#include<stdlib.h>
+#include<math.h>
+#include<conio.h>
+#include<windows.h>
+
+
+int main(){
+
+    int j,i=0,bin,dec;
+    int sum=0;
+
+    printf("Enter a binary number:");
+    scanf("%d",&bin);
+
+    while (bin>0)
+    {
+      
+        int remainder=bin%10;
+        sum+=remainder*pow(2,i);
+          i++;
+          bin=bin/10;
+    }
+    printf("The decimal number is %o \n",sum);
+
+    getch();
+
+    return 0;
+}
