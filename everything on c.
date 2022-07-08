@@ -1,3 +1,5 @@
+                //ARRAY PROBLEMS
+
 // // // // // // // // #include<stdio.h>
 // // // // // // // // #include<time.h>
 // // // // // // // // #include<string.h>
@@ -104,7 +106,8 @@
     
 // // // // // // // // }
 
-
+            //MATRIX MULTIPLICATION
+            
 // // // // // // // #include<stdio.h>
 // // // // // // // #include<time.h>
 // // // // // // // #include<string.h>
@@ -178,7 +181,8 @@
     
     
 // // // // // // // }
-
+            //PALINDROME+REVERSE
+            
 // // // // // // #include<stdio.h>
 // // // // // // #include<time.h>
 // // // // // // #include<string.h>
@@ -253,7 +257,8 @@
 // // // // //     return 0;
 // // // // // }
 
-
+            //FACTORIAL
+            
 // // // // #include<stdio.h>
 // // // // #include<time.h>
 // // // // #include<string.h>
@@ -304,7 +309,9 @@
 
 // // // //     return 0;
 // // // // }
-
+            
+            //PRIME NUMBER(FIRST 10)
+            
 // // // #include<stdio.h>
 // // // #include<time.h>
 // // // #include<string.h>
@@ -343,47 +350,8 @@
 // // //     return 0;
 // // // }
 
-
-// // #include<stdio.h>
-// // #include<time.h>
-// // #include<string.h>
-// // #include<stdlib.h>
-// // #include<math.h>
-// // #include<conio.h>
-// // #include<windows.h>
-
-
-// // int main(){
-
-// //     int dec;
-// //     long long int bin;
-// //     int i=0,j;
-// //     int bina[10];
-
-// //     printf("Enter a decimal Number:");
-// //     scanf("%d",&dec);
-
-// //     while (dec!=0)
-// //     {
-// //         int remainder=dec%2;
-// //         bina[i]=remainder;
-// //         dec=dec/2;
-// //         i--;
-// //     }
-    
-// //     for ( j = 0; j <i; j++)
-// //     {
-// //         printf("%d",bina[i]);
-// //     }
-    
-
-// //     getch();
-
-// //     return 0;
-// // }
-
-
-
+            //DECIMAL TO BINARY
+            
 // #include<stdio.h>
 // #include<time.h>
 // #include<string.h>
@@ -424,6 +392,7 @@
 //     return 0;
 // }
 
+            //BINARY TO DECIMAL
 #include<stdio.h>
 #include<time.h>
 #include<string.h>
@@ -449,7 +418,7 @@ int main(){
           i++;
           bin=bin/10;
     }
-    printf("The decimal number is %o \n",sum);
+    printf("The decimal number is %d \n",sum);
 
     getch();
 
